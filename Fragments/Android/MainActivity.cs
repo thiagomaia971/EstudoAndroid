@@ -4,11 +4,13 @@ using Android.Content;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Android.Support.V7.App;
-using Android.Support.V4.Widget;
 using Android.OS;
 using Android.Fragments;
 using Android.Util;
+using Android.Support.V7.App;
+using Android.Support.V4.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
+//using Drawer
 
 namespace Android
 {
@@ -16,8 +18,9 @@ namespace Android
     public class MainActivity : ActionBarActivity
     {
 
-        private Android.Support.V7.Widget.Toolbar mToolbar;
-        FragmentTransaction mFragmentManager;
+        private Toolbar mToolbar;
+        private FragmentTransaction mFragmentManager;
+        //private Android.Support.V4.Widget.
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -25,7 +28,7 @@ namespace Android
             SetContentView(Resource.Layout.Main);
 
             // Criando o actionBar
-                mToolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+                mToolbar = FindViewById<Toolbar> (Resource.Id.toolbar);
                 SetSupportActionBar(mToolbar);
                 SupportActionBar.Title = "Test the toolbar";
 
