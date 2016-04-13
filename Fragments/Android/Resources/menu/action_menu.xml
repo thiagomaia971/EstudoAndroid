@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:myapp="http://schemas.android.com/apk/res-auto">
+  
+  <item android:id="@+id/action_fragment1"
+        android:title="Fragment1"
+        android:showAsAction="never"/>
+  
+  <item android:id="@+id/action_fragment2"
+        android:title="Fragment2"
+        android:showAsAction="never"/>
+  
+  <item android:id="@+id/action_fragment3"
+        android:title="Fragment3"
+        android:showAsAction="never"/>
+  
+</menu>
