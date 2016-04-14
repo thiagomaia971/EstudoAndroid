@@ -1,42 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk-auto"
-  android:layout_width="match_parent"
-  android:layout_height="wrap_content">
-  
-  <android.support.v7.widget.Toolbar 
-      android:id="@+id/toolbar"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:minHeight="?attr/actionBarSize"
-      android:background="?attr/colorPrimary"
-      app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-      app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>
-        
-  <FrameLayout
-      android:id="@+id/fragmentContainer"
-      android:layout_below="@id/toolbar"
-      android:layout_width="fill_parent"
-      android:layout_height="fill_parent"/>
-
-  <android.support.v4.widget.DrawerLayout
-      android:id="@+id/drawer_layout"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent">
-    
-      <!-- The Main Content View -->
-
-    
-      <!-- The Left Navigation Drawer -->
-      <ListView
-        android:id="@+id/left_drawer"
-        android:layout_width="240dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:choiceMode="singleChoice"
-        android:divider="#818181"
-        android:dividerHeight="1dp"
-        android:background="#E3F2FD"/>
-  
-  </android.support.v4.widget.DrawerLayout>
+    xmlns:app="http://schemas.android.com/apk-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+   
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      
+        <!-- The Main Content View -->
+          <FrameLayout
+           android:id="@+id/fragmentContainer"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent" />
+      
+        <!-- The Left Navigation Drawer -->
+          <FrameLayout
+              android:id="@+id/left_drawer"
+              android:layout_width="240dp"
+              android:layout_height="match_parent"
+              android:layout_gravity="start"
+              android:choiceMode="singleChoice"
+              android:divider="#818181"
+              android:dividerHeight="1dp"
+              android:background="#E3F2FD" />
+    </android.support.v4.widget.DrawerLayout>
 </RelativeLayout>

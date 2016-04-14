@@ -14,7 +14,7 @@ using SupportFragment = Android.Support.V4.App.Fragment;
 
 namespace Android.Fragments
 {
-    public class Fragment2 : SupportFragment
+    public class LeftDrawerFragment : SupportFragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -25,7 +25,7 @@ namespace Android.Fragments
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            var view = inflater.Inflate(Resource.Layout.Fragment2, container, false);
+            View view = inflater.Inflate(Resource.Layout.LeftDrawerFragment, container, false);
 
             return view;
         }

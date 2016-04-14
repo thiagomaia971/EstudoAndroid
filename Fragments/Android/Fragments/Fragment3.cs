@@ -10,10 +10,11 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using SupportFragment = Android.Support.V4.App.Fragment;
 
 namespace Android.Fragments
 {
-    public class Fragment3 : Fragment
+    public class Fragment3 : SupportFragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
