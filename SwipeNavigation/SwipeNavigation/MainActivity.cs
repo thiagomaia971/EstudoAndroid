@@ -6,25 +6,29 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
+
 namespace SwipeNavigation
 {
     [Activity(Label = "SwipeNavigation", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        int count = 1;
+        /*CourseManager courseManager;
+        CoursePagerAdapter coursePagerAdapter;
+        ViewPager viewPager;*/
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
+            /*courseManager = new CourseManager();
+            courseManager.MoveFirst();
 
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            coursePagerAdapter =
+                new CoursePagerAdapter(SupportFragmentManager, courseManager);
+
+            viewPager = FindViewById<ViewPager>(Resource.Id.coursePager);
+            viewPager.Adapter = coursePagerAdapter;*/
         }
     }
 }

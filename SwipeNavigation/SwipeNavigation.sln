@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwipeNavigation", "SwipeNavigation\SwipeNavigation.csproj", "{6CD2F599-D970-418C-A1AA-67C660569492}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{38D538F6-1968-4F80-AC04-2062A6ABB7E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{6CD2F599-D970-418C-A1AA-67C660569492}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CD2F599-D970-418C-A1AA-67C660569492}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6CD2F599-D970-418C-A1AA-67C660569492}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{38D538F6-1968-4F80-AC04-2062A6ABB7E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38D538F6-1968-4F80-AC04-2062A6ABB7E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38D538F6-1968-4F80-AC04-2062A6ABB7E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38D538F6-1968-4F80-AC04-2062A6ABB7E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
