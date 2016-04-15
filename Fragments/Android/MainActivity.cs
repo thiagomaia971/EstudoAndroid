@@ -15,7 +15,7 @@ using SupportFragment = Android.Support.V4.App.Fragment;
 namespace Android
 {
     [Activity(Label = "FragmentLearning", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/MyTheme")]
-    public class MainActivity : ActionBarActivity
+    public class MainActivity : AppCompatActivity
     {
 
         private Toolbar mToolbar;

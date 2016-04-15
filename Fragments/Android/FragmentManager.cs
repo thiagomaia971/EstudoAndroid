@@ -22,10 +22,10 @@ namespace Android
         private Fragment1 Fragment1;
         private Fragment2 Fragment2;
         private Fragment3 Fragment3;
-        private ActionBarActivity mHost;
+        private AppCompatActivity mHost;
         private SupportManager mFragmentTrans;
 
-        public FragmentManager(ActionBarActivity host)
+        public FragmentManager(AppCompatActivity host)
         {
             Fragment1 = new Fragment1();
             Fragment2 = new Fragment2();
@@ -52,6 +52,8 @@ namespace Android
         public void SwapFragment(string fragment)
         {
             mFragmentTrans = mHost.SupportFragmentManager.BeginTransaction();
+            mFragmentTrans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_in, Resource.Animation.slide_out);
+
             mFragmentTrans.Hide(CurrentFragment);
 
             switch (fragment)

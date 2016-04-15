@@ -61,6 +61,12 @@ namespace Android
 			// aapt resource value: 0x7f040009
 			public const int abc_slide_out_top = 2130968585;
 			
+			// aapt resource value: 0x7f04000a
+			public const int slide_in = 2130968586;
+			
+			// aapt resource value: 0x7f04000b
+			public const int slide_out = 2130968587;
+			
 			static Animation()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

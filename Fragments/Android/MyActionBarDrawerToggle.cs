@@ -9,11 +9,11 @@ namespace Android
     public class MyActionBarDrawerToggle : ActionBarDrawerToggle
     {
 
-        private ActionBarActivity mHostActivity;
+        private AppCompatActivity mHostActivity;
         private int mOpenedResource;
         private int mClosedResource;
 
-        public MyActionBarDrawerToggle(ActionBarActivity host, DrawerLayout drawerLayout, Toolbar toolbar, int openedResource, int closedResource) 
+        public MyActionBarDrawerToggle(AppCompatActivity host, DrawerLayout drawerLayout, Toolbar toolbar, int openedResource, int closedResource) 
             : base(host, drawerLayout, toolbar, openedResource, closedResource)
         {
             mHostActivity = host;
