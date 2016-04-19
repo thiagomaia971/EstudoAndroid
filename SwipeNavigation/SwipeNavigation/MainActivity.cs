@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace SwipeNavigation
 {
-    [Activity(Label = "SwipeNavigation", MainLauncher = true, Icon = "@drawable/icon")]
+    //[Activity(Label = "SwipeNavigation", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         /*CourseManager courseManager;

@@ -14,10 +14,11 @@ using SupportFragment = Android.Support.V4.App.Fragment;
 using SupportFragmentManager = Android.Support.V4.App.FragmentManager;
 using Domain;
 using SwipeNavigation.Fragments;
+using Android.Util;
 
 namespace SwipeNavigation
 {
-    public class CoursePagerAdapter : FragmentStatePagerAdapter
+    public class CoursePagerAdapter : Android.Support.V4.App.FragmentStatePagerAdapter
     {
         private CourseManager courseManager;
 
@@ -29,17 +30,18 @@ namespace SwipeNavigation
 
         public override SupportFragment GetItem(int position)
         {
-            courseManager.MoveTo(position);
+            Log.Info("LOG", "CoursePagerAdapter.GetItem(" + position + ")");
+            //courseManager.MoveTo(position);
 
             CourseFragment courseFragment = new CourseFragment();
-            courseFragment.Course = courseManager.Current;
+            courseFragment.Courses = courseManager.currentCourses();
 
             return courseFragment;
         }
 
         public override int Count
         {
-            get { return courseManager.Length; }
+            get { return (int) Math.Ceiling(courseManager.Length/4.0); }
         }
     }
 }

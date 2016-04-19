@@ -22,6 +22,9 @@ namespace SwipeNavigation
 
             switch (drawableName)
             {
+                case "ps_top_card_00":
+                    resourceValue = Resource.Drawable.ps_top_card_00;
+                    break;
                 case "ps_top_card_01":
                     resourceValue = Resource.Drawable.ps_top_card_01;
                     break;
@@ -30,9 +33,6 @@ namespace SwipeNavigation
                     break;
                 case "ps_top_card_03":
                     resourceValue = Resource.Drawable.ps_top_card_03;
-                    break;
-                case "ps_top_card_04":
-                    resourceValue = Resource.Drawable.ps_top_card_04;
                     break;
             }
 

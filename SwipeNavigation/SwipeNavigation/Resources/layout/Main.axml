@@ -1,13 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<Button  
-    android:id="@+id/MyButton"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/Hello"
-    />
-</LinearLayout>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal">
+    <LinearLayout
+        android:id="@+id/llCourses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imageCourse0"
+            android:src="@drawable/ps_top_card_00"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageView
+            android:id="@+id/imageCourse1"
+            android:src="@drawable/ps_top_card_01"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageView
+            android:id="@+id/imageCourse2"
+            android:src="@drawable/ps_top_card_02"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageView
+            android:id="@+id/imageCourse3"
+            android:src="@drawable/ps_top_card_02"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageView
+            android:id="@+id/imageCourse4"
+            android:src="@drawable/ps_top_card_02"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageView
+            android:id="@+id/imageCourse5"
+            android:src="@drawable/ps_top_card_02"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+    </LinearLayout>
+</HorizontalScrollView>

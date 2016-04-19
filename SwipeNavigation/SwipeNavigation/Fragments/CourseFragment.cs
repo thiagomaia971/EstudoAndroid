@@ -17,12 +17,12 @@ namespace SwipeNavigation.Fragments
 {
     public class CourseFragment : SupportFragment
     {
+        
+        private ImageView[] mImageCourses;
+        private ListView mLvCourser;
+        private int[] coursesImages;
 
-        private TextView mTitle;
-        private TextView mDescription;
-        private ImageView mImageCourse;
-
-        public Course Course { get; set; }
+        public Course[] Courses;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -35,14 +35,17 @@ namespace SwipeNavigation.Fragments
             var view = inflater.Inflate(Resource.Layout.CourseFragment, container, false);
 
             // Init the components
+                
+                mImageCourses = new ImageView[4];
+                mImageCourses[0] = view.FindViewById<ImageView>(Resource.Id.imageCourse0);
+                mImageCourses[1] = view.FindViewById<ImageView>(Resource.Id.imageCourse1);
+                mImageCourses[2] = view.FindViewById<ImageView>(Resource.Id.imageCourse2);
+                mImageCourses[3] = view.FindViewById<ImageView>(Resource.Id.imageCourse3);
 
-                mTitle = view.FindViewById<TextView>(Resource.Id.textTitle);
-                mDescription = view.FindViewById<TextView>(Resource.Id.textDescription);
-                mImageCourse = view.FindViewById<ImageView>(Resource.Id.imageCourse);
-
-                mTitle.Text = Course.Title;
-                mDescription.Text = Course.Description;
-                mImageCourse.SetImageResource(ResourceHelper.TranslateDrawableWithReflection(Course.Image));
+                for (int i = 0; i < Courses.Length; i++)
+                {
+                    mImageCourses[i].SetImageResource(ResourceHelper.TranslateDrawableWithReflection(Courses[i].Image));
+                }
 
             return view;
         }

@@ -15,7 +15,7 @@ using Android.Support.V4.View;
 
 namespace SwipeNavigation
 {
-    //[Activity(Label = "SwipeNavigation", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "SwipeNavigation", MainLauncher = true, Icon = "@drawable/icon")]
     public class CourseActivity : FragmentActivity
     {
         private CourseManager mCourseManager;
