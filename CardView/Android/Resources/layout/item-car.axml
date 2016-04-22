@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_car"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:src="@drawable/icon"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="16dp" />
+    <TextView
+        android:id="@+id/tv_model"
+        android:text="Title here"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="24dp" />
+    <TextView
+        android:id="@+id/tv_brand"
+        android:text="Subtitle here"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_model"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_car"
+        android:padding="8dp">
+        <Button
+            android:text="Action 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
