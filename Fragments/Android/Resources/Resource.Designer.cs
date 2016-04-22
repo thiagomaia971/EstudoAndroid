@@ -2730,6 +2730,9 @@ namespace Android
 			// aapt resource value: 0x7f0800e9
 			public const int Theme_AppCompat_NoActionBar = 2131230953;
 			
+			// aapt resource value: 0x7f080135
+			public const int Theme_Custom = 2131231029;
+			
 			// aapt resource value: 0x7f0800ea
 			public const int ThemeOverlay_AppCompat = 2131230954;
 			

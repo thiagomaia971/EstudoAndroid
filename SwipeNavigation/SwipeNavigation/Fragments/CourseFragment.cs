@@ -28,6 +28,8 @@ namespace SwipeNavigation.Fragments
         {
             base.OnCreate(savedInstanceState);
             
+
+
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -42,12 +44,24 @@ namespace SwipeNavigation.Fragments
                 mImageCourses[2] = view.FindViewById<ImageView>(Resource.Id.imageCourse2);
                 mImageCourses[3] = view.FindViewById<ImageView>(Resource.Id.imageCourse3);
 
+                mImageCourses[0].Click += delegate { click(view, mImageCourses[0]); };
+                mImageCourses[1].Click += delegate { click(view, mImageCourses[1]); };
+                mImageCourses[2].Click += delegate { click(view, mImageCourses[2]); };
+                mImageCourses[3].Click += delegate { click(view, mImageCourses[3]); };
+
                 for (int i = 0; i < Courses.Length; i++)
                 {
                     mImageCourses[i].SetImageResource(ResourceHelper.TranslateDrawableWithReflection(Courses[i].Image));
                 }
 
             return view;
+        }
+
+        private void click(View v, View t)
+        {
+            ImageView a = v.FindViewById<ImageView>(t.Id);
+            a.Visibility = ViewStates.Invisible;
+            Log.Info("LOG", "Test ");
         }
     }
 }
